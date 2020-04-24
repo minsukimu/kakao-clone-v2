@@ -9,14 +9,15 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chats ❘ Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
-      <div cloass="status-bar__column">
+      <div class="status-bar__column">
         <span class="status-bar__clock">13:54</span>
       </div>
-      <div cloass="status-bar__column">
+      <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
@@ -44,19 +45,25 @@
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
-              <div class="chat__content">
-                <span class="chat__username">
-                  Lynn
+            <div class="chats_chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/avatar.jpg" class="avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Lynn
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">
+                  Yesterday
                 </span>
-                <span class="chat__preview">Going home!</span>
               </div>
             </div>
           </a>
-          <div class="chat__column">
-            <span class="chat__timestamp">Yesterday</span>
-          </div>
         </li>
       </ul>
     </main>
@@ -69,6 +76,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
